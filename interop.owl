@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/theseedjet/business-ontologies/interop"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/theseedjet/business-ontologies/interop">
+    <Prefix name="" IRI="https://github.com/theseedjet/business-ontologies/interop"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">Business Model Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">interop-bmo</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://visualdataweb.org/newOntology/Core_Capabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://visualdataweb.org/newOntology/Customer_Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://visualdataweb.org/newOntology/Resources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/contain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/delivers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/is-a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/required-by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/serves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/targeted-by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/targets"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/contain"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Core_Capabilities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/delivers"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Channel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/is-a"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Link"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/precedes"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Link"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Customer_Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Channel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Resources"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/required-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Resources"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/requires"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/serves"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Channel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/targeted-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Customer_Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/targets"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/contain"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Resources"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/delivers"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/is-a"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Channel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/precedes"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Link"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Customer_Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Distribution_Link"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Resources"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/refined-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/required-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/requires"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Core_Capabilities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/serves"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Customer_Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/targeted-by"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Value_Proposition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://visualdataweb.org/newOntology/targets"/>
+        <Class IRI="http://visualdataweb.org/newOntology/Customer_Group"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/Core_Capabilities</IRI>
+        <Literal xml:lang="en">Core Capabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/Customer_Group</IRI>
+        <Literal xml:lang="en">Customer Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/Distribution_Channel</IRI>
+        <Literal xml:lang="en">Distribution Channel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/Distribution_Link</IRI>
+        <Literal xml:lang="en">Distribution Link</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/Resources</IRI>
+        <Literal xml:lang="en">Resources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/Value_Proposition</IRI>
+        <Literal xml:lang="en">Value Proposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/contain</IRI>
+        <Literal xml:lang="en">contain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/delivers</IRI>
+        <Literal xml:lang="en">delivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/is-a</IRI>
+        <Literal xml:lang="en">is-a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/precedes</IRI>
+        <Literal xml:lang="en">precedes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/refined-by</IRI>
+        <Literal xml:lang="en">refined-by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/required-by</IRI>
+        <Literal xml:lang="en">required-by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/requires</IRI>
+        <Literal xml:lang="en">requires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/serves</IRI>
+        <Literal xml:lang="en">serves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/targeted-by</IRI>
+        <Literal xml:lang="en">targeted-by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://visualdataweb.org/newOntology/targets</IRI>
+        <Literal xml:lang="en">targets</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
